@@ -1,3 +1,7 @@
+"""
+Renames images and videos to timestamp (ex: 20210511_123456.png)
+"""
+
 import ffmpeg
 import os
 from PIL import Image
