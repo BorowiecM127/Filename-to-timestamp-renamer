@@ -2,8 +2,8 @@
 Renames images and videos to timestamp (ex: 20210511_123456.png)
 """
 
-import ffmpeg
 import os
+import ffmpeg
 from PIL import Image
 
 imgFormats = ["png", "jpg", "jpeg"]
