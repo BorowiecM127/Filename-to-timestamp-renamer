@@ -42,16 +42,16 @@ def change_name_until_success(old_filename: str, new_filename: str):
             if i == 1:
                 os.rename(old_filename, new_filename)
                 break
-            else:
-                os.rename(
-                    old_filename,
-                    new_filename.split(".")[0]
-                    + " ("
-                    + str(i)
-                    + ")."
-                    + new_filename.split(".")[1],
-                )
-                break
+
+            os.rename(
+                old_filename,
+                new_filename.split(".")[0]
+                + " ("
+                + str(i)
+                + ")."
+                + new_filename.split(".")[1],
+            )
+            break
         except FileExistsError:
             i += 1
 
